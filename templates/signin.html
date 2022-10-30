@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body background="https://c4.wallpaperflare.com/wallpaper/532/499/690/black-formula-board-wallpaper-preview.jpg">
+    <br><br><br>
+    <h1 style="font-size: 60px; color: rgb(0, 136, 225);"><center>Login details</center></h1>
+    <form action="/signin" method="post" style="font-size: 30px;">
+    {% csrf_token %}
+        <center><label for="" style="color: white;">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" style="height: 30px;" required></center>
+
+        <center><label for="" style="color: white;">Password :</label>
+        <input type="password" id="pass1" name="pass1" placeholder="Enter your password" style="height: 30px;" required></center>
+
+        <br>
+        <center><button type="submit" style="height:40px;width:200px; font-size: large;">Sign In</button></center>
+
+    </form>
+</body>
+</html>

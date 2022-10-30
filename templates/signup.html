@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body background="https://c4.wallpaperflare.com/wallpaper/532/499/690/black-formula-board-wallpaper-preview.jpg">
+    <br><br><br>
+    <h1 style="font-size: 60px; color: rgb(0, 136, 225);"><center>Register</center></h1>
+    <form action="/signup" method="post" style="font-size: 30px;">
+    {% csrf_token %}
+        <center><label for="" style="color: white;">Username&emsp;&ensp;:</label>
+        <input type="text" id="username" name="username" placeholder="create a username" style="height:30px;" required></center>
+
+        <center><label for="" style="color: white;">First name&emsp;&nbsp;:</label>
+            <input type="text" id="fname" name="fname" placeholder="capitals" style="height:30px;" required></center>
+
+        <center><label for="" style="color: white;">Last name&emsp;&ensp;:</label>
+            <input type="text" id="lname" name="lname" placeholder="capitals" style="height:30px;" required></center>
+        
+        <center><label for="" style="color: white;">Email address:</label>
+            <input type="email" id="email" name="email" placeholder="valid email" style="height:30px;" required></center>
+        
+        <center><label for="" style="color: white;">Password &emsp;&ensp;:</label>
+            <input type="password" id="pass1" name="pass1" placeholder="password" style="height:30px;" required></center>
+           
+        <center><label for="" style="color: white;">Cnf Password:</label>
+            <input type="password" id="pass2" name="pass2" placeholder="confirm password" style="height:30px;" required></center>
+        <br>
+        <center><button type="submit" style="height:40px;width:200px; font-size: large;">Sign Up</button></center>
+    </form>
+</body>
+</html>
